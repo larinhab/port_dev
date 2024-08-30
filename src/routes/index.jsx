@@ -2,8 +2,7 @@ import { Home } from "../pages/Home"
 import { About } from '../pages/About'
 import { Contact } from '../pages/Contact'
 import { Projects } from '../pages/Projects'
-import { BrowserRouter as Router, 
-         Routes as RouterRoutes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export function AppRoutes(){ 
     return(
