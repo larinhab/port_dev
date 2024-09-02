@@ -6,9 +6,4 @@ export default defineConfig({
   plugins: [react(),
     svgr(),
   ],
-  build: {
-    rollupOptions: {
-      external: ['react-router-dom'] 
-    }
-  }
 });
