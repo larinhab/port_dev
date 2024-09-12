@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from './style'
-import axios from 'axios';
+import { api } from '../../services/api';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation'; 
 import 'swiper/css/pagination';
 
 export function ProjectSwiper() {
-  const [projects, setProjects] = useState([])
-  const API_BASE_URL = import.meta.VITE_API_BASE_URL;
+  const [ projects, setProjects ] = useState([])
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get(`${API_BASE_URL}/projects`);
-        console.log(response.data)
+        const response = await api.get(`/projects`);
         setProjects(response.data);
       } catch (error) {
         console.error('Erro ao buscar projetos:', error)
@@ -23,19 +20,14 @@ export function ProjectSwiper() {
     };
 
     fetchProjects();
-  }, [API_BASE_URL]);
+  }, []);
 
   return (
     <Container>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={32}
-        loop={true}
-        pagination={{ clickable: true }}
-        navigation={true}
-      >
+      <main>
+
         {projects.map((project) => (
-          <SwiperSlide key={project.id}>
+          <div className='projects-box' key={project.id}>
             <div className='projects'>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
@@ -43,9 +35,9 @@ export function ProjectSwiper() {
                 Visitar Repositório
               </a>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </main>
     </Container>
   );
 }

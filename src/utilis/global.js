@@ -15,27 +15,6 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
-    [data-theme="dark"]{
-        --background: #16191c;
-        --text-color: #bfc2c7;
-        --secondary-color: #333;
-        --btn-color: #bfc2c7;
-        --btn-hover: #333;
-        --svg-color: #16191c;
-        --svg-hover: #333;
-    }
-
-    
-    [data-theme="light"]{
-        --background: #bfc2c7;
-        --text-color: #16191c;
-        --secondary-color: #333;
-        --btn-color: #bfc2c7;
-        --btn-hover: #333;
-        --svg-color: #bfc2c7;
-        --svg-hover: #333;
-    }
-
     a {
         text-decoration: none;
     }

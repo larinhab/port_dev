@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sun from "./Sun.svg";
 import Moon from "./Moon.svg";
 import { Container } from "./styles.js";
@@ -16,6 +16,10 @@ export function ThemeMode(){
         if(e.target.checked) setDarkMode()
         else setLightMode()
     }
+
+    useEffect(() => {
+        setLightMode()
+    }, [])
 
     return (
 
