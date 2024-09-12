@@ -4,45 +4,50 @@ export const Container = styled.div`
     height: 100dvh;
     width: 100%;
     margin: auto;
+    background-color: var(--background);
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30rem;
+        margin: 7rem 10rem;
+        padding: 0 10rem;
+    }
 
     .welcome{
         display: flex;
         flex-direction: column ;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
+        text-align: right;
+
 
         h2{
             font-family: 'Bellarina';
-            font-size: 8rem;
+            font-size: 7rem;
             font-weight: 500;
-            text-align: center;
-            position: absolute;
-            top: 180px;
-            right: 300px;
         }
 
         p{
             width: 500px;
             font-family: "Grandstander";
             font-size: 2.3rem;
-            font-weight: 300;
-            text-align: right;
-
-            position: absolute;
-            top: 400px;
-            right: 300px;
+            font-weight: 500;
         }
 
+        span{
+            font-weight: 600;
+        }
 
     .tech{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         font-size: 3rem;
-        position: absolute;
-        top: 630px;
-        right: 300px;
+        margin-top: 2rem;
     }
     }
 `

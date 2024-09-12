@@ -12,8 +12,10 @@ import { SiMysql } from "react-icons/si";
 
 import Lottie3 from "react-lottie";
 import animationData from "../../assets/animation_1.json";
+import { useColorToggle } from '../../hooks/colorToggle'
 
 export function Home(){
+      const [color, toggleColor] = useColorToggle();
 
   const defaultOptions = {
     loop: true,
@@ -32,16 +34,21 @@ export function Home(){
         <div>
              <Lottie3 options={defaultOptions}
             style={{
-                width: '800px',
-                position: "absolute",
-                left: "100px",
-            }}/>
+              width: '800px',
+              aspectRatio: "16:9",
+          }}
+            />
           </div>
 
           <div className="welcome">
             <h2>Bem vindo,</h2>
-            <p>este é o meu portfólio, sou uma desenvolvedora web e estudante de engenharia de software
-              minhas tecnologias são:
+            <p>este é o meu portfólio, sou uma
+                <span style={{color, transition: 'color 0.7s ease'}} 
+                onMouseOver={toggleColor}> desenvolvedora web </span> 
+                e estudante de  
+                <span style={{color, transition: 'color 1s ease'}} 
+                onMouseOver={toggleColor}> engenharia de software </span> 
+                 e minhas tecnologias são:
             </p>
             <div className="tech">
               <FaGitAlt />

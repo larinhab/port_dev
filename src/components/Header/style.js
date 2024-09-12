@@ -3,10 +3,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    background: linear-gradient( 135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
-    backdrop-filter: blur(20px);
     margin: 0;
 
+    
+    backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            -webkit-box-shadow: 0px 2px 15px 0px;
+            -moz-box-shadow: 10px 10px 21px 0px;
+            border-radius: 6px;
+    
     nav{
         width: 100%;
         height: 7rem;

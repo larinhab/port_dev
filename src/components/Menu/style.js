@@ -33,8 +33,7 @@ export const Container = styled.div`
         
         a{
             text-decoration: none;
-            color: black;
             font-family: "Grandstander";
-            font-weight: 600;
+            font-weight: 500;
         }
 `

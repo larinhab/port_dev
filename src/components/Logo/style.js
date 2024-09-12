@@ -11,13 +11,14 @@ export const Container = styled.div`
 
     #lara{
         font-family: 'Bellarina';
+        letter-spacing: .2rem;
         font-size: 5rem;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     #dev{
         font-family: "Grandstander";
-        font-weight: 600;
+        font-weight: 800;
         position: left;
         margin: 0.8rem;
         padding-top: 2.4rem;

@@ -5,7 +5,7 @@ export const Container = styled.div`
 
     form{
         width: 600px;
-        height: 600px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -51,6 +51,7 @@ export const Container = styled.div`
         height: 450px;
         border-radius: 0.3rem;
         border: none;
+        font-family: 'Grandstander';
         
         background: linear-gradient( 135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
         backdrop-filter: blur(50px);
@@ -76,6 +77,8 @@ export const Container = styled.div`
         margin: 1rem auto;
         padding: 0.3rem;
         cursor: pointer;
+        font-family: 'Grandstander';
+        font-weight: 500;
 
         background: linear-gradient( 135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
         backdrop-filter: blur(50px);
@@ -85,7 +88,6 @@ export const Container = styled.div`
     }
 
     button:hover{
-        color: gray;
         transition: 3s;
     }
 `

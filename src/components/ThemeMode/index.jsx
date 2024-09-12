@@ -13,7 +13,7 @@ export function ThemeMode(){
     }
 
     const toggleTheme = (e) => {
-        if(e.target.check) setDarkMode()
+        if(e.target.checked) setDarkMode()
         else setLightMode()
     }
 

@@ -9,19 +9,23 @@ import { MdAlternateEmail } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
 
 export function ContactForm(){
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+
+ if(!formData){
+  return("Campos Obrigatorios")
+ }
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/send-email', formData);
+      await axios.post('https://port-dev-back.onrender.com/contact', formData)
       alert('Email enviado com sucesso!');
     } catch (error) {
-      alert('Erro ao enviar email, tente novamente mais tarde.');
+      alert('Erro ao enviar email, tente novamente mais tarde.')
     }
   };
 

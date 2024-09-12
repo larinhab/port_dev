@@ -14,17 +14,6 @@ export const Container = styled.div`
         padding: 4rem;
     }
 
-    h2{
-            font-family: 'Bellarina';
-            font-size: 6rem;
-            font-weight: 500;
-            text-align: center;
-            position: absolute;
-            top: 180px;
-            right: 200px;
-        }
-
-
     .img-box{
         display: flex;
         align-items: center;
@@ -44,19 +33,34 @@ export const Container = styled.div`
      .img-box:hover .imgProfile {
             transform: rotateY(180deg); 
   }
-        .text-box{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            width: 800px;
 
-        p{
+    .text-box{
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+
+            margin-left: 7rem;
+            padding: 2rem;
+            width: 1000px;
             text-align: right;
-            font-family: "Grandstander";
-            font-weight: 300;
-            font-size: 1.2rem;
             
+        h2{
+            font-family: 'Bellarina';
+            font-size: 6rem;
+            font-weight: 500;
+        }
+
+        .text{
+            margin-left: 8rem;
+            text-align: justify;
+        }
+
+        p, span{
+            font-family: "Grandstander";
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 `

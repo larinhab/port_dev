@@ -15,6 +15,7 @@ export function ProjectSwiper() {
     const fetchProjects = async () => {
       try {
         const response = await axios.get(`${API_BASE_URL}/projects`);
+        console.log(response.data)
         setProjects(response.data);
       } catch (error) {
         console.error('Erro ao buscar projetos:', error)

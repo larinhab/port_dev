@@ -7,13 +7,13 @@ export const Container = styled.div`
   
   width: 100%;
   height: 2.3rem;
-  
-  background: linear-gradient( 135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  -webkit-box-shadow: 2px 2px 1px 1px;
-  -moz-box-shadow: 5px 5px 1px 1px;
   border-radius: 0.8rem;
+  border: 1px;
+    backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            -webkit-box-shadow: 2px 2px 10px 0px;
+            -moz-box-shadow: 10px 10px 21px 0px;
+            border-radius: 6px;
 
   svg {
     margin: 1rem;

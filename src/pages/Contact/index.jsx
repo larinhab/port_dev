@@ -27,22 +27,12 @@ export function Contact(){
       <Header/>
       
       <main>
-          <div className="box">
           <h2>Você tem alguma ideia de projeto ?</h2>
-        
-              <Lottie3 className={ 'lottie' } style={
-                  { 
-                    width: '800px',
-                    position: "absolute", 
-                    top: '200px', 
-                    left: '100px',
-                    zIndex: '-1',
-                    overflow: "visible",
-                  }}
-                    options={ defaultOptions }/>
-          <div className="form">
+          <div className="box">
+              <Lottie3 className={ 'lottie' } 
+                      options={ defaultOptions }
+                      />
               <ContactForm/>
-          </div>
           </div>
       </main>
 

@@ -7,6 +7,33 @@
 }
 
 body{
-  height: 100dvh;
-  background: linear-gradient(to right, #1a1a1a 25%, #EB92BE 0%, #48AEDD, #CBDB3E);
+  border: 10px solid var(--border-color);
+  transition: border-color 1.5s ease;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+button, a {
+  color: var(--btn-color);
+}
+
+[data-theme="dark"]{
+  --background: #16191c;
+  --text-color: #bfc2c7;
+  --secondary-color: #333;
+  --btn-color: #bfc2c7;
+  --btn-hover: #333;
+  --svg-color: #bfc2c7;
+  --svg-hover: #333;
+}
+
+
+[data-theme="light"]{
+  --background: #bfc2c7;
+  --text-color: #16191c;
+  --secondary-color: #333;
+  --btn-color: #16191c;
+  --btn-hover: #333;
+  --svg-color: #16191c;
+  --svg-hover: #333;
 }
